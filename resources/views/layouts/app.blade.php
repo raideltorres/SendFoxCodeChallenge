@@ -69,7 +69,7 @@
                 </div>
             </nav>
 
-            <main style="background-image: url('images/mailbg.jpg');">
+            <main style="background-image: url({{ asset('images/mailbg.jpg') }});">
                 @yield('content')
             </main>
         </div>

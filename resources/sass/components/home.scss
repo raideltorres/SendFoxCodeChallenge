@@ -1,0 +1,4 @@
+.home-container {
+    @extend .flex-full-center;
+    height: calc(100vh - 3.5rem);
+}

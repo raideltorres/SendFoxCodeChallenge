@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container login-container">
+<div class="container auth-container">
     <div class="row justify-content-center">
         <div class="col-md-12">
-			<div class="login-card">
+			<div class="auth-card">
                 <form class="validate-form" method="POST" action="{{ route('login') }}">
                     @csrf
 
@@ -27,7 +27,7 @@
                             <i class="fa fa-user"></i>
                         </label>
 
-                        <div class="col-md-8">
+                        <div class="col-md-7">
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                             @error('email')
@@ -43,7 +43,7 @@
                             <i class="fa fa-lock"></i>
                         </label>
 
-                        <div class="col-md-8">
+                        <div class="col-md-7">
                             <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                             @error('password')

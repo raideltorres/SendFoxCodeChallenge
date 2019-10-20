@@ -13689,7 +13689,8 @@ a.text-dark:focus {
 }
 
 .flex-full-center,
-.login-container,
+.home-container,
+.auth-container,
 .blue-btn {
   display: flex;
   align-items: center;
@@ -13702,7 +13703,7 @@ a.text-dark:focus {
 }
 
 .flex-vertical-center,
-.login-container .input-container {
+.auth-container .auth-card .input-container {
   display: flex;
   align-items: center;
 }
@@ -13724,19 +13725,19 @@ a.text-dark:focus {
   background-color: #ff644d;
 }
 
-.login-container {
+.auth-container {
   height: calc(100vh - 3.5rem);
 }
 
-.login-container .login-card {
-  width: 30rem;
+.auth-container .auth-card {
+  width: 38rem;
   border-radius: 0.75rem;
-  padding: 3rem 3rem 2rem 3rem;
+  padding: 3rem;
   background: #8a75ff;
   background: linear-gradient(0deg, #8a75ff 0%, #ef2424 100%);
 }
 
-.login-container .logo-container {
+.auth-container .auth-card .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13747,58 +13748,69 @@ a.text-dark:focus {
   margin: 0 auto;
 }
 
-.login-container .logo-container img {
+.auth-container .auth-card .logo-container img {
   width: 60%;
 }
 
-.login-container .title-container {
+.auth-container .auth-card .title-container {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 2rem 0;
 }
 
-.login-container .input-container {
+.auth-container .auth-card .input-container {
   margin: 0 0 1rem 0;
 }
 
-.login-container .input-container label {
+.auth-container .auth-card .input-container label {
   margin: 0;
+  color: #ffffff;
 }
 
-.login-container .input-container label i {
+.auth-container .auth-card .input-container label i {
   color: #ff644d;
   font-size: 1.75rem;
 }
 
-.login-container .input-container input {
+.auth-container .auth-card .input-container input {
   height: 2.5rem;
   font-size: 0.8rem;
 }
 
-.login-container .remember-container {
+.auth-container .auth-card .remember-container {
   color: #ffffff;
   margin-bottom: 1.5rem;
 }
 
-.login-container .remember-container .form-check {
+.auth-container .auth-card .remember-container .form-check {
   padding: 0;
 }
 
-.login-container .remember-container .form-check .form-check-input {
+.auth-container .auth-card .remember-container .form-check .form-check-input {
   margin-top: 0.4rem;
 }
 
-.login-container .button-container {
+.auth-container .auth-card .button-container {
   margin-top: 2rem;
 }
 
-.login-container .button-container button {
+.auth-container .auth-card .button-container button {
   margin: 0 auto;
 }
 
-.login-container .button-container .btn-link {
+.auth-container .auth-card .button-container .btn-link {
   color: #ffffff;
+}
+
+.auth-container .invalid-feedback {
+  background: #ccdfed;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.home-container {
+  height: calc(100vh - 3.5rem);
 }
 
 * {
