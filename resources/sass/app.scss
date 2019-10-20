@@ -1,8 +1,38 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Variables
-@import 'variables';
-
-// Bootstrap
+// Bootstrap and Font Awesome
 @import '~bootstrap/scss/bootstrap';
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+// Variables and useful classes
+@import 'colors';
+@import 'useful';
+@import 'buttons';
+
+// Components
+@import 'components/login';
+
+// Base styles
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Nunito', sans-serif;
+    height: 100%;
+    font-size: 16px;
+    margin: 0;
+}
+
+input, button, textarea {
+	outline: none;
+	border: none;
+}
+
+main {
+	background-position: center;
+	background-size: cover;
+}
