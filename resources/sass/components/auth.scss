@@ -1,0 +1,87 @@
+.auth-container {
+    @extend .flex-full-center;
+    height: calc(100vh - 3.5rem);
+
+    .auth-card {
+        width: 38rem;
+        padding: 3rem;
+        margin: 0 auto;
+        border-radius: 0.75rem;
+        background: rgb(138,117,255);
+        background: linear-gradient(0deg, rgba(138,117,255,1) 0%, rgba(239,36,36,1) 100%);
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 9rem;
+            height: 9rem;
+
+            border-radius: 50%;
+            background-color: $white;
+            margin: 0 auto;
+
+            img {
+                width: 60%;
+            }
+        }
+
+        .title-container {
+            color: $white;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 2rem 0;
+        }
+
+        .input-container {
+            @extend .flex-vertical-center;
+            margin: 0 0 1rem 0;
+
+            label {
+                margin: 0;
+                color: $white;
+
+                i {
+                    color: $persimmon;
+                    font-size: 1.75rem;
+                }
+            }
+
+            input {
+                height: 2.5rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        .remember-container {
+            color: $white;
+            margin-bottom: 1.5rem;
+
+            .form-check {
+                padding: 0;
+
+                .form-check-input {
+                    margin-top: 0.4rem;
+                }
+            }
+        }
+
+        .button-container {
+            margin-top: 2rem;
+
+            button {
+                margin: 0 auto;
+            }
+
+            .btn-link {
+                color: $white;
+            }
+        }
+    }
+
+    .invalid-feedback {
+        background: $jaggedice;
+        padding: 0.5rem;
+        border-radius: 0.2rem;
+    }
+}

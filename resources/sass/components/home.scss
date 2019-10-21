@@ -1,0 +1,13 @@
+.home-container {
+    @extend .flex-full-center;
+    height: calc(100vh - 3.5rem);
+
+    .card-header {
+        color: $persimmon;
+        font-weight: bold;
+    }
+
+    .gray-btn {
+        margin-top: 1.5rem;
+    }
+}
