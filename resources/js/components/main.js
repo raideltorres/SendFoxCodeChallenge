@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Axios from 'axios';
 import {ToastContainer, toast} from 'react-toastify';
 import {Editor, EditorState, RichUtils, convertToRaw} from 'draft-js';
+import {stateToHTML} from 'draft-js-export-html';
 import BlockStyleControls from './block-controls';
 import InlineStyleControls from './inline-controls';
 
@@ -91,7 +92,7 @@ function Main() {
             return;
         }
 
-        const contentState = JSON.stringify(convertToRaw(editorState.getCurrentContent()));
+        const contentState = stateToHTML(editorState.getCurrentContent());
 
         axios({
             method: 'post',

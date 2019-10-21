@@ -16,6 +16,7 @@
 @import 'components/draft';
 @import 'components/auth';
 @import 'components/home';
+@import 'components/mail';
 
 // Base styles
 * {
@@ -34,9 +35,4 @@ html, body {
 input, button, textarea {
 	outline: none;
 	border: none;
-}
-
-main {
-	background-position: center;
-	background-size: cover;
 }

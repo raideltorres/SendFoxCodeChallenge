@@ -14350,6 +14350,7 @@ a.text-dark:focus {
 }
 
 .flex-full-center,
+.mail-container,
 .home-container,
 .auth-container,
 .gray-btn,
@@ -14432,7 +14433,8 @@ a.text-dark:focus {
   display: none;
 }
 
-.rich-editor-editor .rich-editor-blockquote {
+.rich-editor-blockquote,
+blockquote {
   font-family: "Hoefler Text", "Georgia", serif;
   border-left: 5px solid #ccdfed;
   color: #666666;
@@ -14441,11 +14443,12 @@ a.text-dark:focus {
   padding: 0.5rem 1.5rem;
 }
 
-.rich-editor-editor .public-DraftStyleDefault-pre {
+.public-DraftStyleDefault-pre,
+pre {
   background-color: rgba(0, 0, 0, 0.05);
   font-family: "Inconsolata", "Menlo", "Consolas", monospace;
   font-size: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .rich-editor-controls {
@@ -14567,6 +14570,16 @@ a.text-dark:focus {
   margin-top: 1.5rem;
 }
 
+.mail-container {
+  padding: 4rem 0;
+  min-height: calc(100vh - 3.5rem);
+}
+
+.mail-container .card-header {
+  color: #ff644d;
+  font-weight: bold;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -14586,10 +14599,5 @@ button,
 textarea {
   outline: none;
   border: none;
-}
-
-main {
-  background-position: center;
-  background-size: cover;
 }
 

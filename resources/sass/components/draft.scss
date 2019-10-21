@@ -24,22 +24,22 @@
     .public-DraftEditorPlaceholder-root {
         display: none;
     }
+}
 
-    .rich-editor-blockquote {
-        font-family: 'Hoefler Text', 'Georgia', serif;
-        border-left: 5px solid $jaggedice;
-        color: $doveGray;
-        font-style: italic;
-        margin: 1rem 0;
-        padding: 0.5rem 1.5rem;
-    }
+.rich-editor-blockquote, blockquote {
+    font-family: 'Hoefler Text', 'Georgia', serif;
+    border-left: 5px solid $jaggedice;
+    color: $doveGray;
+    font-style: italic;
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem;
+}
 
-    .public-DraftStyleDefault-pre {
-        background-color: rgba(0, 0, 0, 0.05);
-        font-family: 'Inconsolata', 'Menlo', 'Consolas', monospace;
-        font-size: 1rem;
-        padding: 1.5rem;
-    }
+.public-DraftStyleDefault-pre, pre {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: 'Inconsolata', 'Menlo', 'Consolas', monospace;
+    font-size: 1rem;
+    padding: 1rem;
 }
 
 .rich-editor-controls {

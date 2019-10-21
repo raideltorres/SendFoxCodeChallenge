@@ -17,7 +17,13 @@ class EmailController extends Controller
      */
     public function index()
     {
-        //
+        // First let's get the current user
+        $user = User::find(Auth::id());
+
+        // Second let's get the current user mails
+        $mails = $user->mails()->paginate(10);
+
+        return view('email.index')->with('mails', $mails);
     }
 
     /**

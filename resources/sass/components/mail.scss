@@ -1,0 +1,10 @@
+.mail-container {
+    @extend .flex-full-center;
+    padding: 4rem 0;
+    min-height: calc(100vh - 3.5rem);
+
+    .card-header {
+        color: $persimmon;
+        font-weight: bold;
+    }
+}
