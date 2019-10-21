@@ -3,7 +3,9 @@
 
 // Bootstrap and Font Awesome
 @import '~bootstrap/scss/bootstrap';
-@import "node_modules/font-awesome/scss/font-awesome.scss";
+@import "~draft-js/dist/Draft.css";
+@import "~react-toastify/dist/ReactToastify.css";
+@import "~font-awesome/scss/font-awesome.scss";
 
 // Variables and useful classes
 @import 'colors';
@@ -11,6 +13,7 @@
 @import 'buttons';
 
 // Components
+@import 'components/draft';
 @import 'components/auth';
 @import 'components/home';
 

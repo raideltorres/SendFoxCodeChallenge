@@ -15,3 +15,21 @@
   color: $jaggedice;
   background-color: $persimmon;
 }
+
+.gray-btn {
+    @extend .flex-full-center;
+    color: $persimmon;
+    background-color: $jaggedice;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0.75rem 1rem;
+    min-width: 10rem;
+    border-radius: 1.5rem;
+    transition: all 0.4s;
+}
+
+.gray-btn:hover {
+  color: $jaggedice;
+  background-color: $persimmon;
+}
